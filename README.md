@@ -44,3 +44,22 @@ DATA ENDS
 ```
 
 The assembly source code includes explicit routines for initialization, keypad scanning, authentication and LED patterns. 
+
+#### Pattern 1: Left to Right Shift
+```
+AL = 00000001b → 00000010b → ... → 10000000b
+```
+#### Pattern 2: Alternating Blink
+```
+AL = 01010101b → 10101010b → repeat 8 times
+```
+#### Pattern 3: Binary Counter
+```
+AL = 00000000b to 11111111b (0 to 255)
+```
+#### Pattern 6: Ping-Pong
+```
+AL = 00000001b → shift left to 10000000b → then shift back to 00000001b → repeat
+```
+
+This project includes a software-controlled buzzer for safe I/O handling, a modular 8086 assembly design with distinct processes for every LED pattern, and appropriate stack usage to maintain register state. After successful authentication, it continuously loops a few chosen LED patterns and features dependable keypad input with software debounce.
