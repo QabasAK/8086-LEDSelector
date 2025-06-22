@@ -2,6 +2,17 @@
 
 This project implements a **simple authentication and LED pattern display system using an 8086 microprocessor**, interfaced with a 4x3 keypad, LEDs, and a buzzer. The system authenticates a user-entered password and, upon success, allows selection of LED display patterns.
 
+``` mathematica
+Start → Init 8255 → Enter PIN → [Correct?]
+                                 │
+                ┌──── No ─────┐  ┌──── yes ─────┐
+                ▼             ▼  ▼              ▼
+            Buzzer ON     Retry Auth       Pattern Menu
+                                               │
+                                               ▼
+                                 Keypad Input → Run Pattern → Loop
+```
+
 ### Main Hardware Components 
 
 + **8086 Microprocessor [U1]**: Core CPU controlling the system flow.
