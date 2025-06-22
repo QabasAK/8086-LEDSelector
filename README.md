@@ -24,7 +24,7 @@ This project implements a **simple authentication and LED pattern display system
   + U6 connects the upper data bus (D8–D15)
  
 <p align = center>
-  <img src="https://github.com/user-attachments/assets/281b5445-404d-458a-ba61-e10f92a500b3" width = 85%>
+  <img src="https://github.com/user-attachments/assets/281b5445-404d-458a-ba61-e10f92a500b3" width = 100%>
 </p>
 
 ### Software Components 
