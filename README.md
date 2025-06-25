@@ -4,13 +4,13 @@ This project implements a **simple authentication and LED pattern display system
 
 ``` mathematica
 Start → Init 8255 → Enter PIN → [Correct?]
-                                 │
-                ┌──── No ─────┐  ┌──── yes ─────┐
-                ▼             ▼  ▼              ▼
-            Buzzer ON     Retry Auth       Pattern Menu
-                                               │
-                                               ▼
-                                 Keypad Input → Run Pattern → Loop
+                                    │
+                      ┌──── No ─────┐  ──── yes ─────┐
+                      ▼             ▼                ▼
+                  Buzzer ON       Retry            Pattern
+                                  Auth             Choice 
+                                                      ▼
+                                                 Keypad Input → Run Pattern → Loop
 ```
 
 ### Main Hardware Components 
